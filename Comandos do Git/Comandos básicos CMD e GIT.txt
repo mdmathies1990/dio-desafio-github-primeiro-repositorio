@@ -1,0 +1,123 @@
+Comandos básicos do terminal
+
+
+CONCEITOS
+
+•	símbolo “>” [é um redirecionador de fluxo]
+•	Flags = [acrescentam, modificam, ou formatam a forma que esses comandos são devolvidos]
+•	botão TAB [autocompleta o texto]
+•	Qnd vc dá um comando e ñ aparece nada, deu certo (silence on success)
+•	setinha p/ cima [navega por todos os últimos comandos executados]
+
+COMANDOS
+DESCRIÇÃO
+
+
+•	cd (change directory) [caminho]  
+cd / = Base do diretório C
+cd Windows = entra na pasta Windows
+cd .. = volta
+cd workspace = entra na pasta workspace
+
+•	dir (directory)  [lista de diretórios contidos na pasta em que estamos situados] 
+
+•	mkdir (make directory) [ cria uma pasta]
+mkdir workspace = cria uma pasta denominada “workspace”
+
+•	del (delete) [deleta]
+del workspace = deleta arquivos dentro da pasta workspace
+
+•	rmdir (remove diretora) [deleta pasta]
+rmdir workspace /S /Q]
+
+•	echo [escreve]
+echo hello > hello.txt  = cria um doc com o nome “hello”
+
+•	cls (clear screen) [limpa o terminal]
+
+Comandos básicos do git
+
+CONCEITOS
+•	Escolha o local e clique c/ o butão direito “ Git Bash here”
+
+COMANDOS
+DESCRIÇÃO
+•	Open ssl sha1 [encriptação]
+openssl sha1 <nome do arquivo>
+
+echo ‘conteudo’ I git hash-object - - stdin
+
+
+blobs = arquivo
+
+trees = arvore
+
+commits = atualização
+
+
+
+ROTINA DE CRIAÇÃO DE CHAVES
+
+•	$ ssh-keygn -t ed25519 - C mdmathies@gmail.com [commando pra gerar chave ssh]
+
+
+(/c/Users/marco/.ssh/id_ed25519):
+
+Your identification has been saved in /c/Users/marco/.ssh/id_ed25519
+Your public key has been saved in /c/Users/marco/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:+TO0DNGquHBb6STdfTUVtSTbQKGvtNuaGFmlPVkal/0 mdmathies@gmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|            .=.oo|
+|         .  . * =|
+|        . .. + *o|
+|         +  = *..|
+|        S .+ *o E|
+|     o + *+.o... |
+|  . + * .oBo.    |
+|   o B    o++    |
+|    o .  . +..   |
++----[SHA256]-----+
+
+marco@LAPTOP-HCQPKTSE MINGW64 ~
+$ cd /c/Users/Marco/.ssh
+
+marco@LAPTOP-HCQPKTSE MINGW64 /c/Users/Marco/.ssh
+$ ls
+id_ed25519  id_ed25519.pub
+
+
+
+marco@LAPTOP-HCQPKTSE MINGW64 /c/Users/Marco/.ssh
+$ eval $(ssh-agent -s)
+Agent pid 1313
+
+
+-	git init [iniciar repositório]
+-	git add [mover arquivos e versionamento]
+-	git commit [dar commit]
+-	ls -a (flag pra mostrar arquivos ocultos)
+
+
+
+Configuração inicial p/ fingerprint nos commit: username e email
+
+$ git config --global user.email mdmathies@gmail.com [ comando 1 p/ criar ]
+
+$ git config --global user.name mdmathies1990 [comando 2]
+
+
+
+
+marco@LAPTOP-HCQPKTSE MINGW64 /c/workspace/livro-receitas (master)
+$ git add *
+
+
+marco@LAPTOP-HCQPKTSE MINGW64 /c/workspace/livro-receitas (master)
+$ git commit -m "commit inicial"
+[master (root-commit) b24734a] commit inicial
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 arroz.md
+
+marco@LAPTOP-HCQPKTSE MINGW64 /c/workspace/livro-receitas (master)
